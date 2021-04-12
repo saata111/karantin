@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Куда бы ты хотел поехать на выходных?</h1>
+	<textarea class="textarea form-control"></textarea>
+	<button class="btn">Поехали</button>
+	<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801149.2483042157!2d-81.80669291966055!3d21.505377005546826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd49070f7a4cb5%3A0x798cf7529110a41a!2z0JrRg9Cx0LA!5e0!3m2!1sru!2sru!4v1618213631137!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<script type="text/javascript">
+		let  txt_area = document.querySelector('.textarea')
+		document.querySelector('.btn').onclick = function(){
+			let saved = txt_area.value;
+			document.querySelector('.iframe').src = saved;
+		}
+	</script>
+
+</body>
+</html>
